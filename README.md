@@ -1,6 +1,6 @@
 # Syed Khurram Munir — portfolio
 
-The approved jet-black portfolio implemented with Next.js App Router, React and TypeScript. It includes light mode, ten selected contributions, five career roles, interactive project workflows and expertise, section navigation, and one animated floating double-chevron back-to-top control.
+The approved jet-black portfolio implemented with Next.js App Router, React and TypeScript. It includes light mode, ten selected contributions, the original three-card career journey, five detailed career roles, interactive project workflows and expertise, section navigation, and one animated floating double-chevron back-to-top control.
 
 ## Run locally
 
@@ -18,6 +18,7 @@ Open `http://localhost:3000`.
 ```sh
 npm run build
 npm run typecheck
+npm run verify
 npm run preview
 ```
 
@@ -27,7 +28,7 @@ The production build exports a static site into `out/`. The preview command serv
 
 The separate source repository is `KhurramMunir95/syed-khurram-munir-portfolio`. The portfolio source is at the repository root.
 
-Enable **Settings → Pages → Build and deployment → Source: GitHub Actions**. The workflow in `.github/workflows/deploy-pages.yml` installs dependencies, builds the static export, checks TypeScript, and publishes `out/` on each push to `main`. It also supports a manual run from the Actions tab.
+Enable **Settings → Pages → Build and deployment → Source: GitHub Actions**. The workflow in `.github/workflows/deploy-pages.yml` installs dependencies, builds the static export, checks TypeScript, verifies the journey cards, icons, contact options and asset paths, and publishes `out/` on each push to `main`. It also supports a manual run from the Actions tab.
 
 Once the first deployment succeeds, the public portfolio URL is:
 
@@ -50,7 +51,7 @@ Open `http://127.0.0.1:3000/syed-khurram-munir-portfolio/`. Omit `NEXT_PUBLIC_BA
 - `lib/expertise.ts` — engineering expertise content.
 - `public/icon.svg` — portfolio favicon.
 
-All portfolio sections stay on the page when navigating. External links and email links use normal browser behavior. Motion honors `prefers-reduced-motion`. Project illustrations describe simplified architecture and workflows; they do not represent live production screenshots or operational metrics.
+All portfolio sections stay on the page when navigating. Email actions open an accessible dialog with Gmail, a native mail-app link and a copy-address fallback. With JavaScript disabled, the original mailto links remain usable. Motion honors `prefers-reduced-motion`. Project illustrations describe simplified architecture and workflows; they do not represent live production screenshots or operational metrics.
 
 The earlier website preview is available at https://khurram-portfolio-interactive.khurrammunir95.chatgpt.site. This repository contains its Next.js implementation; it does not automatically republish that hosted preview.
 

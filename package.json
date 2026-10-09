@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "typecheck": "tsc --noEmit",
+    "verify": "node scripts/verify-export.mjs",
     "preview": "node scripts/preview.mjs"
   },
   "engines": {
