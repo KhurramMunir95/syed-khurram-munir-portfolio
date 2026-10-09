@@ -33,7 +33,7 @@ Once the first deployment succeeds, the public portfolio URL is:
 
 https://khurrammunir95.github.io/syed-khurram-munir-portfolio/
 
-GitHub Pages supplies the repository base path during the build. JavaScript, styles and the favicon use that path. For a local preview of the GitHub Pages build:
+The workflow sets the repository base path during the build. JavaScript, styles and the favicon use that path. Build and TypeScript checks run before GitHub Pages configuration is checked; a new repository still needs **Source: GitHub Actions** enabled before the deployment can publish. For a local preview of the GitHub Pages build:
 
 ```sh
 NEXT_PUBLIC_BASE_PATH=/syed-khurram-munir-portfolio npm run build

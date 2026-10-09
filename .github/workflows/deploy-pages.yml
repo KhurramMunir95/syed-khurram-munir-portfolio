@@ -26,15 +26,12 @@ jobs:
         with:
           node-version: 24
           cache: npm
-      - name: Configure GitHub Pages
-        id: pages
-        uses: actions/configure-pages@v5
       - name: Install dependencies
         run: npm ci
       - name: Build static portfolio
         run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
       - name: Check TypeScript
         run: npm run typecheck
       - name: Upload static site
@@ -53,6 +50,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
       - name: Publish portfolio
         id: deployment
         uses: actions/deploy-pages@v4
