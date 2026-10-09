@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Syed Khurram Munir · Full Stack Engineer",
   description:
     "Six years across websites, enterprise software, smart-city monitoring, digital evidence workflows and production delivery. Senior full stack engineer based in Lahore.",
-  icons: { icon: "/icon.svg" },
+  icons: { icon: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/icon.svg` },
 };
 
 export const viewport: Viewport = {
