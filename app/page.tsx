@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import SelectedWork from "@/components/SelectedWork";
 import CaseFlow from "@/components/CaseFlow";
 import ExpertisePanel from "@/components/ExpertisePanel";
+import EmailContact from "@/components/EmailContact";
 
 export default function PortfolioPage() {
   return (
@@ -177,7 +178,28 @@ export default function PortfolioPage() {
       </section>
 
       <section className="ka-section" id="ki-experience" aria-labelledby="ki-experience-title">
-        <div className="ka-section-top"><div><p className="ka-kicker">Six years, building on each step</p><h2 id="ki-experience-title">Experience</h2></div><p>From frontend delivery to full stack engineering, enterprise ownership and developer mentoring. The roles and responsibilities behind the work.</p></div>
+        <div className="ka-section-top ka-journey-heading"><div><p className="ka-kicker">Six years, building on each step</p><h2 id="ki-experience-title">From features to ownership.</h2></div><p>A progression in scope: delivering interfaces, connecting applications, then owning platform features and guiding a team.</p></div>
+        <div className="ka-journey" aria-label="Career progression from 2020 to 2026">
+          <article className="ka-journey-step">
+            <div className="ka-journey-year">2020 — 2021</div>
+            <h3>The foundations</h3>
+            <p>Retail features, reusable UI, responsive websites and CMS delivery. Learning the full journey from requirements to release.</p>
+            <div className="ka-journey-company">TV2U · Code Desk</div>
+          </article>
+          <article className="ka-journey-step">
+            <div className="ka-journey-year">2021 — 2024</div>
+            <h3>Full stack delivery</h3>
+            <p>React applications, Node.js services, REST APIs and business logic. Client requirements, API integration and production support.</p>
+            <div className="ka-journey-company">Einnovention · Transcure</div>
+          </article>
+          <article className="ka-journey-step">
+            <div className="ka-journey-year">2024 — 2026</div>
+            <h3>Broader ownership</h3>
+            <p>Enterprise workflows, configurable features, real-time systems and deployment improvements. Technical decisions and developer mentoring.</p>
+            <div className="ka-journey-company">Innovent Tech Solutions</div>
+          </article>
+        </div>
+        <div className="ka-career-heading"><h3>Experience</h3><p>The roles and responsibilities behind the work.</p></div>
         <ol className="ka-career" aria-label="Professional experience, most recent first">
           <li className="ka-career-item">
             <div className="ka-career-date"><time dateTime="2024-09">Sep 2024</time> — <time dateTime="2026-09">Sep 2026</time><small>Enterprise & team ownership</small></div>
@@ -227,6 +249,7 @@ export default function PortfolioPage() {
   </div>
   <BackToTop />
 <Navigation />
+<EmailContact />
 </div>
   );
 }

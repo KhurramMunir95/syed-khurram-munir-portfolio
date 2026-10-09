@@ -20,6 +20,7 @@
   --ka-solid:#1260d8; --ka-button-end:#1054c7; --ka-solid-ink:#fff; --ka-shadow:rgba(33,59,96,.08); color-scheme:light;
 }
 #khurram-interactive-2026 * {box-sizing:border-box;}
+#khurram-interactive-2026 svg {display:block;flex-shrink:0;}
 #khurram-interactive-2026 :is(h1,h2,h3,h4,p,ul) {margin:0;}
 #khurram-interactive-2026 :is(h1,h2,h3,h4) {color:var(--ka-ink);}
 #khurram-interactive-2026 :is(button,a,summary) {font:inherit;}
@@ -182,12 +183,17 @@
 #khurram-interactive-2026 .ka-craft-card p {font-size:12px;line-height:1.8;color:var(--ka-secondary);margin-top:8px;}
 #khurram-interactive-2026 .ka-craft-meta {font-size:11px;color:var(--ka-muted);margin-top:10px;}
 #khurram-interactive-2026 .ka-journey {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;}
-#khurram-interactive-2026 .ka-journey-step {position:relative;padding:21px 20px 19px;border:1px solid var(--ka-line);border-radius:14px;background:var(--ka-surface);}
-#khurram-interactive-2026 .ka-journey-step:before {content:'';position:absolute;left:20px;right:20px;top:-1px;height:1px;background:linear-gradient(90deg,var(--ka-mint),transparent);opacity:.55;}
-#khurram-interactive-2026 .ka-journey-year {font-size:11px;color:var(--ka-mint);font-weight:600;}
-#khurram-interactive-2026 .ka-journey-step h3 {font-size:14px;font-weight:600;margin-top:9px;}
-#khurram-interactive-2026 .ka-journey-step p {font-size:11px;line-height:1.8;color:var(--ka-secondary);margin-top:8px;}
-#khurram-interactive-2026 .ka-journey-company {font-size:11px;color:var(--ka-muted);margin-top:15px;line-height:1.8;}
+#khurram-interactive-2026 .ka-journey-step {--ka-journey-accent:var(--ka-mint);position:relative;padding:24px 20px;border:1px solid var(--ka-line);border-radius:14px;background:var(--ka-surface);}
+#khurram-interactive-2026 .ka-journey-step:first-child {--ka-journey-accent:var(--ka-red);}
+#khurram-interactive-2026 .ka-journey-step:last-child {--ka-journey-accent:var(--ka-teal);}
+#khurram-interactive-2026 .ka-journey-step:before {content:'';position:absolute;left:20px;right:20px;top:-1px;height:1px;background:linear-gradient(90deg,var(--ka-journey-accent),transparent);opacity:.55;}
+#khurram-interactive-2026 .ka-journey-year {font-size:12px;color:var(--ka-journey-accent);font-weight:600;}
+#khurram-interactive-2026 .ka-journey-step h3 {font-size:16px;font-weight:600;margin-top:12px;}
+#khurram-interactive-2026 .ka-journey-step p {font-size:13px;line-height:1.85;color:var(--ka-secondary);margin-top:12px;}
+#khurram-interactive-2026 .ka-journey-company {font-size:12px;color:var(--ka-muted);margin-top:20px;line-height:1.8;}
+#khurram-interactive-2026 .ka-career-heading {margin:30px 0 16px;}
+#khurram-interactive-2026 .ka-career-heading h3 {font-size:18px;font-weight:600;}
+#khurram-interactive-2026 .ka-career-heading p {font-size:13px;color:var(--ka-muted);margin-top:5px;}
 #khurram-interactive-2026 .ka-contact {margin-top:44px;border:1px solid var(--ka-line);border-radius:18px;padding:29px 31px;background:linear-gradient(115deg,var(--ka-wash),transparent 70%),var(--ka-surface);display:flex;align-items:center;justify-content:space-between;gap:24px;}
 #khurram-interactive-2026 .ka-contact h2 {font-size:23px;font-weight:600;line-height:1.4;letter-spacing:-.65px;margin-top:6px;}
 #khurram-interactive-2026 .ka-contact p {font-size:12px;color:var(--ka-secondary);margin-top:8px;max-width:400px;}
@@ -318,6 +324,7 @@
 #khurram-interactive-2026 .ka-layer-middle {border-color:var(--ka-teal);background:linear-gradient(110deg,var(--ka-green-wash),transparent),var(--ka-surface);}
 #khurram-interactive-2026 .ka-layer-last {border-color:var(--ka-red);background:linear-gradient(110deg,var(--ka-red-wash),transparent),var(--ka-surface);}
 #khurram-interactive-2026 .ka-section-top h2 {font-size:17px;}
+#khurram-interactive-2026 .ka-journey-heading h2 {font-family:'Michroma',Arial,sans-serif;font-weight:400;line-height:1.6;letter-spacing:-.4px;}
 #khurram-interactive-2026 .ka-featured {grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);}
 #khurram-interactive-2026 .ka-case-cover {padding:26px;border-right:1px solid var(--ka-line);background:radial-gradient(ellipse at 15% 80%,var(--ka-wash),transparent 75%),var(--ka-art);border-radius:12px 0 0 12px;}
 #khurram-interactive-2026 .ka-case-evidence {background:radial-gradient(ellipse at 15% 80%,var(--ka-green-wash),transparent 75%),var(--ka-art);}
@@ -328,7 +335,9 @@
 #khurram-interactive-2026 .ka-case-mode {font-size:12px;padding:7px 9px;border:1px solid var(--ka-line);border-radius:6px;background:var(--ka-surface);color:var(--ka-secondary);cursor:pointer;}
 #khurram-interactive-2026 .ka-case-mode[aria-pressed="true"] {color:var(--ka-solid-ink);background:var(--ka-solid);border-color:var(--ka-solid);}
 #khurram-interactive-2026 .ka-case-stage {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:18px 0;}
-#khurram-interactive-2026 .ka-case-stage span {font-size:12px;text-align:center;min-width:0;padding:14px 8px;border:1px solid var(--ka-art-line);border-radius:7px;color:var(--ka-secondary);background:var(--ka-surface);}
+#khurram-interactive-2026 .ka-case-node {display:flex;flex-direction:column;align-items:center;gap:10px;font-size:12px;text-align:center;min-width:0;padding:14px 8px;border:1px solid var(--ka-art-line);border-radius:7px;color:var(--ka-secondary);background:var(--ka-surface);}
+#khurram-interactive-2026 .ka-case-node svg,#khurram-interactive-2026 .ka-case-cover .ka-cover-top svg {color:var(--ka-mint);}
+#khurram-interactive-2026 .ka-case-evidence .ka-case-node svg,#khurram-interactive-2026 .ka-case-evidence .ka-cover-top svg {color:var(--ka-teal);}
 #khurram-interactive-2026 .ka-case-note {font-size:13px;line-height:1.8;color:var(--ka-secondary);min-height:72px;}
 #khurram-interactive-2026 .ka-case-caption {font-size:12px;color:var(--ka-muted);padding-top:13px;margin-top:14px;border-top:1px solid var(--ka-soft);}
 #khurram-interactive-2026 .ka-featured .ka-work-content {padding:26px;}
@@ -352,6 +361,17 @@
 #khurram-interactive-2026 .ka-up-glyph {display:flex;animation:ka-chevron-rise 1.8s ease-in-out infinite;}
 #khurram-interactive-2026 .ka-up-glyph svg {width:24px;height:24px;}
 #khurram-interactive-2026 .ka-footer {padding-right:76px;}
+#khurram-interactive-2026 .ka-email-dialog {width:min(480px,calc(100% - 32px));max-height:calc(100dvh - 40px);padding:26px;border:1px solid var(--ka-art-line);border-radius:18px;color:var(--ka-ink);background:var(--ka-surface);box-shadow:0 20px 80px var(--ka-shadow);}
+#khurram-interactive-2026 .ka-email-dialog::backdrop {background:rgba(0,0,0,.75);backdrop-filter:blur(6px);}
+#khurram-interactive-2026 .ka-email-heading {display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;}
+#khurram-interactive-2026 .ka-email-close {display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--ka-line);border-radius:9px;background:var(--ka-surface-2);}
+#khurram-interactive-2026 .ka-email-close:hover {border-color:var(--ka-mint);}
+#khurram-interactive-2026 .ka-email-dialog h2 {font-size:20px;line-height:1.5;}
+#khurram-interactive-2026 .ka-email-dialog>p {font-size:13px;color:var(--ka-secondary);margin-top:8px;}
+#khurram-interactive-2026 .ka-email-address {width:100%;margin:20px 0;padding:12px;border:1px solid var(--ka-line);border-radius:8px;background:var(--ka-bg);color:var(--ka-mint);font:inherit;font-size:13px;}
+#khurram-interactive-2026 .ka-email-options {display:flex;flex-direction:column;gap:10px;}
+#khurram-interactive-2026 .ka-email-options .ka-action {justify-content:space-between;min-height:44px;}
+#khurram-interactive-2026 .ka-email-dialog .ka-email-feedback {min-height:24px;margin-top:14px;}
 @keyframes ka-chevron-rise {0%,100% {transform:translateY(2px);opacity:.7;}50% {transform:translateY(-3px);opacity:1;}}
 @media (max-width:820px) {
   #khurram-interactive-2026 .ka-featured {grid-template-columns:minmax(0,1fr);}
@@ -361,6 +381,7 @@
   #khurram-interactive-2026 .ka-theme {margin-right:0;}
   #khurram-interactive-2026 .ka-career-item {grid-template-columns:minmax(0,1fr);gap:10px;}
   #khurram-interactive-2026 .ka-case-note {min-height:0;}
+  #khurram-interactive-2026 .ka-journey {grid-template-columns:minmax(0,1fr);gap:13px;}
 }
 @media (max-width:490px) {
   #khurram-interactive-2026 .ka-career-item,#khurram-interactive-2026 .ka-case-cover,#khurram-interactive-2026 .ka-featured .ka-work-content {padding:21px;}
