@@ -1,6 +1,6 @@
 # Syed Khurram Munir — portfolio
 
-The approved jet-black portfolio implemented with Next.js App Router, React and TypeScript. It includes light mode, ten selected contributions, the original three-card career journey, five detailed career roles, interactive project workflows and expertise, section navigation, and one animated floating double-chevron back-to-top control.
+The approved jet-black portfolio implemented with Next.js App Router, React and TypeScript. It includes light mode, ten selected contributions, the original three-card career journey, five detailed career roles, a Skills section with 30 labelled icons across six groups, interactive project workflows and expertise, section navigation, and one animated floating double-chevron back-to-top control.
 
 ## Run locally
 
@@ -55,4 +55,4 @@ All portfolio sections stay on the page when navigating. Email actions open an a
 
 The earlier website preview is available at https://khurram-portfolio-interactive.khurrammunir95.chatgpt.site. This repository contains its Next.js implementation; it does not automatically republish that hosted preview.
 
-Icons use Lucide React under the ISC license. Font families are DM Sans, Michroma and Titillium Web, loaded from Google Fonts.
+Icons use Lucide React under the ISC license. Technology marks use selected Simple Icons 16.34.0 paths rendered inline, with source and license information in `public/licenses/`. Neither icon set needs an external CDN script. Font families are DM Sans, Michroma and Titillium Web, loaded from Google Fonts.

@@ -34,6 +34,18 @@ for (const [index, period] of ["2020 — 2021", "2021 — 2024", "2024 — 2026"
 }
 check((experience.match(/class="ka-career-item"/g) || []).length === 5, "Detailed career history must stay present");
 
+const skills = html.match(/<section\b[^>]*\bid="ki-skills"[^>]*>([\s\S]*?)<\/section>/)?.[1];
+check(skills, "Dedicated Skills section must be exported");
+check(anchors.some((link) => link.href === "#ki-skills" && link.content === "Skills"), "Skills must be reachable from navigation");
+const skillGroups = [...skills.matchAll(/data-skill-group="([^"]+)"/g)].map((match) => match[1]);
+check(skillGroups.length === 6 && new Set(skillGroups).size === 6, "All six skill groups must be present");
+const skillItems = [...skills.matchAll(/<li\b[^>]*class="ka-skill-item"[^>]*>([\s\S]*?)<\/li>/g)];
+check(skillItems.length === 30, "All 30 skills must be included in static HTML");
+for (const [, item] of skillItems) {
+  check(/<svg\b[^>]*data-skill-icon="[^"]+"/.test(item) && /class="ka-skill-label">[^<]+/.test(item), "Each skill needs an inline icon and a readable label");
+}
+check(skills.includes("This portfolio"), "Next.js experience context must remain explicit");
+
 const svgs = [...html.matchAll(/<svg\b([^>]*)>([\s\S]*?)<\/svg>/g)];
 check(svgs.length > 30, "Icons must be rendered in HTML without a CDN or client script");
 for (const [, tag, content] of svgs) {
