@@ -8,7 +8,6 @@ const symbols = {
   mqtt: Wifi,
   azure: Cloud,
   integrations: Sparkles,
-  vue: PanelsTopLeft,
 };
 type SkillIconName = keyof typeof skillBrandPaths | keyof typeof symbols;
 type Skill = { label: string; icon: SkillIconName; note?: string };
@@ -24,7 +23,6 @@ const groups: SkillGroup[] = [
       { label: "JavaScript", icon: "javascript" },
       { label: "Next.js", icon: "nextdotjs", note: "This portfolio" },
       { label: "Redux Toolkit / Saga", icon: "redux" },
-      { label: "Vue.js / Nuxt.js", icon: "vue" },
     ],
   },
   {
@@ -34,7 +32,6 @@ const groups: SkillGroup[] = [
       { label: "Node.js", icon: "nodedotjs" },
       { label: "Express", icon: "express" },
       { label: "REST APIs", icon: "api" },
-      { label: "Laravel", icon: "laravel" },
       { label: "Authentication / RBAC", icon: "permissions" },
     ],
   },
@@ -55,6 +52,7 @@ const groups: SkillGroup[] = [
       { label: "HTML", icon: "html5" },
       { label: "CSS", icon: "css" },
       { label: "Tailwind CSS", icon: "tailwindcss" },
+      { label: "Bootstrap", icon: "bootstrap" },
       { label: "Ant Design", icon: "antdesign" },
       { label: "Chart.js", icon: "chartdotjs" },
       { label: "Mapbox", icon: "mapbox" },

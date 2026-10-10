@@ -1,6 +1,6 @@
 # Syed Khurram Munir — portfolio
 
-The approved jet-black portfolio implemented with Next.js App Router, React and TypeScript. It includes light mode, ten selected contributions, the original three-card career journey, five detailed career roles, a Skills section with 30 labelled icons across six groups, interactive project workflows and expertise, section navigation, and one animated floating double-chevron back-to-top control.
+The approved jet-black portfolio implemented with Next.js App Router, React and TypeScript. It includes light mode, ten selected contributions, the original three-card career journey, five detailed career roles, a Skills section with 29 labelled icons across six groups, interactive project workflows and expertise, section navigation, and one animated floating double-chevron back-to-top control.
 
 ## Run locally
 

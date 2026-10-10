@@ -40,7 +40,7 @@ check(anchors.some((link) => link.href === "#ki-skills" && link.content === "Ski
 const skillGroups = [...skills.matchAll(/data-skill-group="([^"]+)"/g)].map((match) => match[1]);
 check(skillGroups.length === 6 && new Set(skillGroups).size === 6, "All six skill groups must be present");
 const skillItems = [...skills.matchAll(/<li\b[^>]*class="ka-skill-item"[^>]*>([\s\S]*?)<\/li>/g)];
-check(skillItems.length === 30, "All 30 skills must be included in static HTML");
+check(skillItems.length === 29, "All 29 skills must be included in static HTML");
 for (const [, item] of skillItems) {
   check(/<svg\b[^>]*data-skill-icon="[^"]+"/.test(item) && /class="ka-skill-label">[^<]+/.test(item), "Each skill needs an inline icon and a readable label");
 }
