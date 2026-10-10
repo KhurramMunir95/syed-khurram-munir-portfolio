@@ -6,6 +6,7 @@ import SelectedWork from "@/components/SelectedWork";
 import CaseFlow from "@/components/CaseFlow";
 import ExpertisePanel from "@/components/ExpertisePanel";
 import EmailContact from "@/components/EmailContact";
+import SkillsSection from "@/components/SkillsSection";
 
 export default function PortfolioPage() {
   return (
@@ -14,7 +15,7 @@ export default function PortfolioPage() {
     <header className="ka-header" id="ki-home">
       <a className="ka-brand cursor-interaction" href="#ki-home" aria-label="Syed Khurram Munir, home"><span className="ka-mark">SKM</span><span className="ka-brand-label">Syed Khurram Munir</span></a>
       <nav className="ka-nav" aria-label="Portfolio navigation">
-        <a className="cursor-interaction" href="#ki-work">Work</a><a className="cursor-interaction" href="#ki-experience">Experience</a><a className="cursor-interaction" href="#ki-approach">Expertise</a><a className="cursor-interaction" href="#ki-about">About</a><a className="cursor-interaction" href="#ki-contact">Contact</a>
+        <a className="cursor-interaction" href="#ki-work">Work</a><a className="cursor-interaction" href="#ki-experience">Experience</a><a className="cursor-interaction" href="#ki-skills">Skills</a><a className="cursor-interaction" href="#ki-approach">Expertise</a><a className="cursor-interaction" href="#ki-about">About</a><a className="cursor-interaction" href="#ki-contact">Contact</a>
       </nav>
       <ThemeToggle />
     </header>
@@ -223,6 +224,8 @@ export default function PortfolioPage() {
           </li>
         </ol>
       </section>
+
+      <SkillsSection />
 
       <section className="ka-section" id="ki-approach" aria-labelledby="ki-approach-title">
         <div className="ka-section-top"><div><p className="ka-kicker">Depth behind the delivery</p><h2 id="ki-approach-title">More than a list of technologies.</h2></div><p>The decisions and responsibilities behind the work, from reusable UI to the release a team can maintain.</p></div>

@@ -1,0 +1,175 @@
+{
+  "package": "simple-icons",
+  "version": "16.34.0",
+  "source": "https://github.com/simple-icons/simple-icons",
+  "icons": [
+    {
+      "slug": "react",
+      "title": "React",
+      "hex": "61DAFB",
+      "source": "https://github.com/facebook/create-react-app/blob/282c03f9525fdf8061ffa1ec50dce89296d916bd/test/fixtures/relative-paths/src/logo.svg",
+      "aliases": {
+        "dup": [
+          {
+            "title": "React Native",
+            "source": "https://reactnative.dev"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "typescript",
+      "title": "TypeScript",
+      "hex": "3178C6",
+      "source": "https://www.typescriptlang.org/branding",
+      "guidelines": "https://www.typescriptlang.org/branding"
+    },
+    {
+      "slug": "javascript",
+      "title": "JavaScript",
+      "hex": "F7DF1E",
+      "source": "https://github.com/voodootikigod/logo.js/blob/1544bdeed6d618a6cfe4f0650d04ab8d9cfa76d9/js.svg",
+      "license": {
+        "type": "MIT"
+      }
+    },
+    {
+      "slug": "nextdotjs",
+      "title": "Next.js",
+      "hex": "000000",
+      "source": "https://vercel.com/design/brands#next-js",
+      "guidelines": "https://vercel.com/design/brands#next-js"
+    },
+    {
+      "slug": "redux",
+      "title": "Redux",
+      "hex": "764ABC",
+      "source": "https://github.com/reduxjs/redux/blob/abb5f892f7e46849e5ca9bc13e75cfbc944a71b6/logo/logo.svg"
+    },
+    {
+      "slug": "nodedotjs",
+      "title": "Node.js",
+      "hex": "5FA04E",
+      "source": "https://nodejs.org/en/about/branding",
+      "guidelines": "https://nodejs.org/en/about/branding"
+    },
+    {
+      "slug": "express",
+      "title": "Express",
+      "hex": "0A0A0A",
+      "source": "https://github.com/openjs-foundation/artwork/blob/3816245ebbf4707bdafde748350ac8476b6b5b62/projects/express/express-icon-black.svg",
+      "aliases": {
+        "aka": [
+          "Express.js"
+        ]
+      }
+    },
+    {
+      "slug": "laravel",
+      "title": "Laravel",
+      "hex": "FF2D20",
+      "source": "https://github.com/laravel/art/tree/5a8325b064634b900f25dbb6f1cafd888b2d2211"
+    },
+    {
+      "slug": "mongodb",
+      "title": "MongoDB",
+      "hex": "47A248",
+      "source": "https://www.mongodb.com/pressroom"
+    },
+    {
+      "slug": "socketdotio",
+      "title": "Socket.io",
+      "hex": "010101",
+      "source": "https://socket.io"
+    },
+    {
+      "slug": "html5",
+      "title": "HTML5",
+      "hex": "E34F26",
+      "source": "https://www.w3.org/html/logo/"
+    },
+    {
+      "slug": "css",
+      "title": "CSS",
+      "hex": "663399",
+      "source": "https://github.com/CSS-Next/logo.css/blob/bacc20878227204b283c68a6b935f8279e06b0cd/css.svg",
+      "guidelines": "https://github.com/CSS-Next/logo.css"
+    },
+    {
+      "slug": "tailwindcss",
+      "title": "Tailwind CSS",
+      "hex": "06B6D4",
+      "source": "https://tailwindcss.com/brand",
+      "guidelines": "https://tailwindcss.com/brand"
+    },
+    {
+      "slug": "antdesign",
+      "title": "Ant Design",
+      "hex": "0170FE",
+      "source": "https://ant.design"
+    },
+    {
+      "slug": "chartdotjs",
+      "title": "Chart.js",
+      "hex": "FF6384",
+      "source": "https://www.chartjs.org"
+    },
+    {
+      "slug": "mapbox",
+      "title": "Mapbox",
+      "hex": "000000",
+      "source": "https://www.mapbox.com/about/press/brand-guidelines",
+      "guidelines": "https://www.mapbox.com/about/press/brand-guidelines"
+    },
+    {
+      "slug": "docker",
+      "title": "Docker",
+      "hex": "2496ED",
+      "source": "https://www.docker.com/company/newsroom/media-resources"
+    },
+    {
+      "slug": "nginx",
+      "title": "NGINX",
+      "hex": "009639",
+      "source": "https://www.nginx.com/press/",
+      "guidelines": "https://www.nginx.com/press/"
+    },
+    {
+      "slug": "git",
+      "title": "Git",
+      "hex": "F03C2E",
+      "source": "https://git-scm.com/community/logos",
+      "license": {
+        "type": "CC-BY-3.0"
+      }
+    },
+    {
+      "slug": "githubactions",
+      "title": "GitHub Actions",
+      "hex": "2088FF",
+      "source": "https://github.com/features/actions"
+    },
+    {
+      "slug": "vite",
+      "title": "Vite",
+      "hex": "9135FF",
+      "source": "https://github.com/voidzero-dev/community-design-resources/blob/55902097229cf01cf2a4ceb376f992f5cf306756/brand-assets/vite/vite-icon-color-bracketless.svg"
+    },
+    {
+      "slug": "cursor",
+      "title": "Cursor",
+      "hex": "000000",
+      "source": "https://cursor.com/brand"
+    },
+    {
+      "slug": "claude",
+      "title": "Claude",
+      "hex": "D97757",
+      "source": "https://claude.ai"
+    }
+  ],
+  "attributions": [
+    "Git logo by Jason Long, CC BY 3.0: https://creativecommons.org/licenses/by/3.0/. Source: https://git-scm.com/community/logos. Rendered with the portfolio accent color.",
+    "JavaScript logo copyright (c) 2011 Christopher Williams; MIT license included in simple-icons.txt."
+  ]
+}
